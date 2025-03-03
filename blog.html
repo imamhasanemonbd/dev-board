@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <!-- daisy ui cdn  --> 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- tailwind css cdn  -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- google font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#f4f7ff]">
+    <header>
+        <nav class="flex justify-center">
+            <div class="navbar bg-base-100 shadow-sm w-[80%] mx-auto mt-4 mb-4 rounded-lg p-4 flex justify-between items-center"> 
+                <div class="navbar-start flex items-center gap-1">
+                    <img src="assets/logo.png" alt="">
+                    <a class=" text-2xl">Dev<span class="font-bold">Board</span></a>
+                </div>
+                <div>
+                    <button class="btn btn-active btn-primary bg-[#3752FD] border-none px-5 py-3"><a href="index.html">Back to Dash</a></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+   <main>
+    <h1 class="text-5xl font-bold text-center my-8">Blogs</h1>
+    <div class="bg-white w-[80%] mx-auto p-4 rounded-lg shadow-sm my-4">
+        <h1 class="text-3xl font-bold">Question-1 : What are the different ways to select an element in the DOM?</h1>
+        <div class="border-t border-dashed border-gray-500 my-8"></div>
+        <p class="text-lg font-medium text-gray-500">There are Many ways we can select the element, for example, getElementByID - it's select an element with a specific id , getElementByClassName - it select any element with the class name , getElementByTagName - this select element with tag name like div, h1, p, etc . we also can select element with query selector quaryselectorall, etc.</p>
+    </div>
+    <div class="bg-white w-[80%] mx-auto p-4 rounded-lg shadow-sm my-4">
+        <h1 class="text-3xl font-bold">Question-2 : What is the difference between innerHTML, innerText, and textContent?</h1>
+        <div class="border-t border-dashed border-gray-500 my-8"></div>
+        <p class="text-lg font-medium text-gray-500">innerHTML get or set content including tags like div, h1 , etc . and the innerText only set the text that is visible not the tags .  and the textContent set all type of text including hidden element also.</p>
+    </div>
+    <div class="bg-white w-[80%] mx-auto p-4 rounded-lg shadow-sm my-4">
+        <h1 class="text-3xl font-bold">Question-3 : What is event delegation in the DOM?</h1>
+        <div class="border-t border-dashed border-gray-500 my-8"></div>
+        <p class="text-lg font-medium text-gray-500">in event delegation a parent element handle events for it's child element, it works using bubbling.</p>
+    </div>
+    <div class="bg-white w-[80%] mx-auto p-4 rounded-lg shadow-sm my-4">
+        <h1 class="text-3xl font-bold">Question-4 : What is event bubbling in the DOM?</h1>
+        <div class="border-t border-dashed border-gray-500 my-8"></div>
+        <p class="text-lg font-medium text-gray-500">in the dom if click on a small element inside a bigger one the event first happen on the small element and then bigger one so on . like drop a pebble in water. </p>
+    </div>
+    <div class="bg-white w-[80%] mx-auto p-4 rounded-lg shadow-sm my-4">
+        <h1 class="text-3xl font-bold">Question-5 : How do you create, add, and remove elements using JavaScript?</h1>
+        <div class="border-t border-dashed border-gray-500 my-8"></div>
+        <p class="text-lg font-medium text-gray-500">we can use createElement to create an element in javascript , to add a element for example on a tag we can use someting like document.body.appendchild , in short we use appendChild to add something, and to remove variable.remove in easy word use remove to remove something. </p>
+    </div>
+
+   </main>
+</body>
+
+
+</html>
